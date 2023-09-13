@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ejemplo de Bootstrap 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>        
+    <!--COMIENZO NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <div class="col-2 d-flex justify-content-start">
+                <a class="navbar-brand" href="javascript:void(0)">Fukusuke </a>
+            </div>
+            <div class="col-7">
+                <ul class="navbar-nav col-12 d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul class="navbar-nav col-12 d-flex justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-cart-fill"></i> Carrito</a>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-outline-warning ms-2">Registrarse</button>
+                            <button type="button" class="btn btn-outline-info ms-2">Iniciar sesión</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--FIN NAVBAR-->
+    </nav>
+    <!--COMIENZO CARRITO DE COMPRAS-->
+    <div class="container p-5 my-5 ms-5 "><!--Eliminar border, solo lo utilizo para medir -->
+        <div class="row">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-3 p-1 ms-1 fs-5 fw-bold">Tu carrito de compras</div> 
+                </div>
+                <hr class="hr" />
+                <div class="card-body">
+                    <!--COMIENZO IMAGEN 1-->
+                    <div class="container border my-5">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                                    <img src="#"
+                                    class="w-100" alt="Sushi X" />
+                                    <a href="#!">
+                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="fs-5">Compra n</div>    
+                                <div class="fs-6">descripcion producto</div>
+                            </div>
+                            <div class="col-3">
+                                <div class="col-6">
+                                    <form action="/action_page.php">
+                                        <div class="col-6">
+                                            <label for="sel1" class="form-label">Cantidad:</label>
+                                        </div>
+                                        <div class="col-6">
+                                            <select class="form-select" id="sel1" name="sellist1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <p class="text-start">Precio</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIN IMAGEN 1-->    
+                </div>
+                
+                <div class="card-body">
+                    <!--COMIENZO IMAGEN 2-->
+                    <div class="container border">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                                    <img src="#"
+                                    class="w-100" alt="Sushi X" />
+                                    <a href="#!">
+                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="fs-5">Compra n</div>    
+                                <div class="fs-6">descripcion producto</div>
+                            </div>
+                            <div class="col-3">
+                                <div class="col-6">
+                                    <form action="/action_page.php">
+                                        <div class="col-6">
+                                            <label for="sel1" class="form-label">Cantidad:</label>
+                                        </div>
+                                        <div class="col-6">
+                                            <select class="form-select" id="sel1" name="sellist1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <p class="text-start">Precio</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIN IMAGEN 2-->
+                </div>
+            </div>
+            <!--COMIENZO CHECKOUT-->
+            <div class="col-md-2">
+                <div class="card-header py-3 ">
+                    <p class="text-center fw-bold">Detalle</p>
+                    <hr class="hr hr-color-dark" />
+                </div>
+                <div class="card-body border border-dark p-2 bg-warning">
+                    <ul class="list-group list-group-flush ">
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0 bg-warning">
+                          Productos
+                          <span>$$$</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0 bg-warning">
+                          Envio
+                          <span>Gratis</span>
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3 bg-warning">
+                          <div>
+                            <p class="fs-6">Monto total</p>
+        
+                            <p class="fs-6">(incluye IVA)</p>
+                            
+                          </div>
+                          <span>$$$</span>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <button type="button" class="btn btn-success btn-block">
+                            Proceder al pago
+                        </button>
+                      </div>
+                      
+                </div>
+            </div>
+            <!--FIN CHECKOUT-->
+        </div>         
+    </div>
+    <footer class="text-white bg-dark fixed-bottom">
+        <section class="">
+            <div class="container text-center text-md-start ">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="fas fa-gem me-3"></i>Fukusuke
+                  </h6>
+                  <p>
+                    Descripcion del restaurant
+                  </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-5 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Horarios
+                    </h6>
+                    <p>
+                      <a href="#!" class="text-reset">Lu a Vi: XX:XX - XX:XX</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="text-reset">Sabado: XX:XX - XX:XX</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="text-reset">Domingo: cerrado</a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+                  <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-5 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Sobre nosotros
+                    </h6>
+                    <p>
+                    <a href="#!" class="text-reset">Copyright</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Creado 2023</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase ms-3 fw-bold mb-4">Contacto</h6>
+                    <p><i class="fas fa-home me-3"></i> En cierta Calle en STGO, n°, CL</p>
+                    <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    Mañanasinfalta@unsiete.cl
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 56977777777</p>
+                    <p><i class="fas fa-print me-3"></i> + 02 23456789</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>

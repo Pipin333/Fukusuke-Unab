@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ejemplo de Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>        
+      <nav class="navbar navbar-expand-sm  ">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-5 me-5" href="javascript:void(0)"><img src="" alt="Logo">Fukusuke</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link text-center ms-5 me-2" href="javascript:void(0)">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="javascript:void(0)">Menu</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="javascript:void(0)">Contactanos</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Busqueda">
+              <button class="btn btn-primary me-4" type="button">Buscar</button>
+            </form>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-cart-fill"></i> Carrito</a>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-outline-warning ms-4">Registrarse</button>
+            <button type="button" class="btn btn-outline-info ms-2">Iniciar sesion</button>
+          </div>
+        </div>
+      </nav>
+      <div class="container p-5 my-5 ms-5 border"><!--Eliminar border, solo lo utilizo para medir -->
+        <div class="row">
+          <div class="col-md-3 p-5 ms-5 fs-5 fw-bold">Tu carrito de compras</div> 
+        </div>
+      </div>
+  
+    
+  </body>
+</html>
